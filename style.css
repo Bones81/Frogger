@@ -1,40 +1,75 @@
-#grid {
-  border: 1px solid;
+body {
+  text-align: center;
+}
+h1, h3, h4 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px 40px;
+  font-size: 1.5em;
+  border-radius: 20px;
+  border: 3px solid;
+  max-width: 300px;
+}
+
+.grid {
+  border: solid 5px;
   display: flex;
   flex-wrap: wrap;
-  height: 180px;
-  width: 180px;
+  height: 360px;
+  width: 360px;
+  margin: 0 auto;
 }
 
-#grid div {
-  height: 20px;
-  width: 20px;
+.grid div {
+  height: 40px;
+  width: 40px;
+  background-size: cover;
 }
 
-.ending-block {
-  background-color: red;
+.grass {
+  background-color: green;
+  background-image: url(images/grass.png);
 }
 
-.starting-block {
-  background-color: blue;
+.goal {
+  background-color: gold;
+  background-image: url(images/checkered-flag.png);
 }
 
-.c1 {
-  background-color: black;
-}
-
-.c2, .c3 {
-  background-color: grey;
-}
-
-.l1, .l2, .l3 {
-  background-color: brown;
-}
-
-.l4, .l5 {
+.river {
   background-color: lightblue;
+  background-image: url(images/river.jpeg);
+}
+
+.log {
+  background-color: brown;
+  background-image: url(images/log.png);
+}
+
+.road {
+  background-color: darkgrey;
+  background-image: url(images/road.jpeg);
+}
+
+.car-left {
+  background-color: black;
+  background-image: url(images/car-facing-left.png);
+}
+
+.car-right {
+  background-color: black;
+  background-image: url(images/car-facing-right.png);
+}
+
+.starting-point {
+  background-color: orange;
 }
 
 .frog {
-  background-color: green;
+  background-color: darkgreen;
+  background-image: url(images/frog.png);
 }
+
