@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  box-sizing: border-box;
 }
 h1, h3, h4 {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -39,29 +40,41 @@ h1, h3, h4 {
   background-image: url(images/checkered-flag.png);
 }
 
-.river {
+.r1, .r2 {
   background-color: lightblue;
   background-image: url(images/river.jpeg);
 }
 
-.log {
+.l1, .l2, .l3 {
   background-color: brown;
   background-image: url(images/log.png);
 }
 
-.road {
+.road1, .road2, .road3, .road4 {
   background-color: darkgrey;
-  background-image: url(images/road.jpeg);
+  /* background-image: url(images/road.jpeg); */
+}
+
+.road1, .road2 {
+  border-bottom: dashed yellow 1px;
+  padding-bottom: 2px;
+}
+
+.road3, .road4 {
+  padding-top: 2px;
+  /* border-top: yellow dashed 1px; */
 }
 
 .car-left {
   background-color: black;
   background-image: url(images/car-facing-left.png);
+  padding-bottom: 2px;
 }
 
 .car-right {
   background-color: black;
   background-image: url(images/car-facing-right.png);
+  padding-top: 2px;
 }
 
 .starting-point {
