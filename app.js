@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.removeEventListener('keyup', moveFrog);
       squares[frogIndex].classList.remove('frog')
       squares[frogIndex].classList.remove('goal')
+      squares[frogIndex].classList.remove('grass')
       squares[frogIndex].classList.add('win')
       result.textContent = "YOU WIN!!"
     }
