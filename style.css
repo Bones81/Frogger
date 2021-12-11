@@ -4,12 +4,21 @@ body {
 }
 h1, h3, h4 {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 5px auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 #button {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 10px 40px;
-  font-size: 1.5em;
+  font-size: 1em;
   border-radius: 20px;
   border: 3px solid;
   max-width: 300px;
@@ -19,14 +28,15 @@ h1, h3, h4 {
   border: solid 5px;
   display: flex;
   flex-wrap: wrap;
-  height: 360px;
-  width: 360px;
+  height: 270px;
+  width: 270px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .grid div {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   background-size: cover;
 }
 
@@ -56,7 +66,7 @@ h1, h3, h4 {
 }
 
 .road1, .road2 {
-  border-bottom: dashed yellow 1px;
+  border-bottom: dashed yellow 2px;
   padding-bottom: 2px;
 }
 
@@ -77,6 +87,14 @@ h1, h3, h4 {
   padding-top: 2px;
 }
 
+.splat {
+  background-color: red;
+}
+
+.death-bubbles {
+  background-color: blue;
+}
+
 .starting-point {
   background-color: orange;
 }
@@ -85,4 +103,3 @@ h1, h3, h4 {
   background-color: darkgreen;
   background-image: url(images/frog.png);
 }
-
