@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[frogIndex].classList.add('win')
       result.textContent = "YOU WIN!!"
       const victoryDiv = document.createElement('div');
+      console.log(victoryDiv);
       victoryDiv.classList.add('victory-div');
       document.querySelector('body').appendChild(victoryDiv);
     }
