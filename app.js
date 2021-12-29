@@ -103,6 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[frogIndex].classList.remove('grass')
       squares[frogIndex].classList.add('win')
       result.textContent = "YOU WIN!!"
+      const victoryDiv = document.createElement('div');
+      victoryDiv.classList.add('victory-div');
+      document.querySelector('body').appendChild(victoryDiv);
     }
   }
 
@@ -122,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         squares[frogIndex].classList.remove('r1')
         squares[frogIndex].classList.remove('r2') 
         squares[frogIndex].classList.remove('frog')
-        squares[frogIndex].classList.add('death-bubbles')
+        squares[frogIndex].classList.add('river-death')
         clearInterval(timerId)
         document.removeEventListener('keyup', moveFrog);
         result.textContent = "SWEPT AWAY IN THE CURRENT. YOU LOSE!"
@@ -142,7 +145,9 @@ document.addEventListener('DOMContentLoaded', () => {
       timerId = null
       document.removeEventListener('keyup', moveFrog)
     } else {
-      timerId = setInterval(runGame, 1000)
+      if (!(squares[frogIndex].classList.contains('splat') || squares[frogIndex].classList.contains('river-death') || squares[frogIndex].classList.contains('win'))) {
+        timerId = setInterval(runGame, 1000)
+      }
     }
   })
 
@@ -164,8 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loss()
     secondsRemaining -= 1
     timeLeft.textContent = secondsRemaining
-
-
   }
 
   // timerId = setInterval(runGame, 1000)
